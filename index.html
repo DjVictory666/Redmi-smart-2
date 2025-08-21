@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redmi Smart Band 2 - Web App</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button, input { margin: 5px 0; padding: 8px; font-size: 16px; }
+        #status { margin-top: 15px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h2>Redmi Smart Band 2 - Idő és adatok</h2>
+
+    <button id="connectBtn">🔌 Csatlakozás a karkötőhöz</button><br>
+    <button id="autoSyncBtn">⏰ Szinkron a telefon idejével</button><br>
+
+    <input type="date" id="dateInput" placeholder="Dátum (YYYY-MM-DD)">
+    <input type="time" id="timeInput" placeholder="Idő (HH:MM:SS)">
+    <button id="manualSyncBtn">📅 Manuális időbeállítás</button><br>
+
+    <button id="readDataBtn">📊 Adatok kiolvasása (lépésszám, pulzus)</button>
+
+    <div id="status">Karkötő státusz...</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
